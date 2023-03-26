@@ -3,10 +3,10 @@ import '../styles/Header.scss';
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header sticky-top">
       <div className="container">
         <div className="d-md-flex justify-content-md-between align-item-center">
-          <h1 className="header__logo">Company logo</h1>
+          <h1 className="header__logo">CompanyX</h1>
           <ul className="header__menu ">
             <li>
               <a href="/">Home</a>
@@ -15,10 +15,7 @@ const Header = () => {
               <a href="/">About</a>
             </li>
             <li>
-              <a href="/">Gallery</a>
-            </li>
-            <li>
-              <a href="/">Products</a>
+              <a href="/">Projects</a>
             </li>
             <li>
               <a href="/">Contact Us</a>

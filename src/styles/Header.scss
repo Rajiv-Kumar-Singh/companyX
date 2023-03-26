@@ -1,6 +1,11 @@
 .header {
-  background-color: #e74c3c;
   color: #ffffff;
+  background: rgb(44, 93, 159);
+  background: linear-gradient(
+    128deg,
+    rgba(44, 93, 159, 1) 0%,
+    rgba(0, 22, 85, 1) 100%
+  );
 
   &__logo {
     font-size: 2em;
@@ -23,7 +28,7 @@
         padding: 0.9em 0.625em;
 
         &:hover {
-          background: #c0392b;
+          background: rgba(44, 93, 159);
         }
       }
     }

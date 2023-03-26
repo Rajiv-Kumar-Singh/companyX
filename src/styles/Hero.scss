@@ -1,0 +1,21 @@
+.hero {
+  background: url('../assets/images/hero.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  //   margin-bottom: 200vh;
+
+  &__text-content {
+    padding-top: 5em;
+    h1 {
+      background: rgba(255, 255, 255, 0.8);
+      display: inline-block;
+      padding: 0.625em;
+      margin: 0;
+    }
+    p {
+      color: #ffffff;
+      background: rgba(4, 37, 72, 0.7);
+      padding: 0.625em;
+    }
+  }
+}
