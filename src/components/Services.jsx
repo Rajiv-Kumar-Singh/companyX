@@ -1,7 +1,11 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBolt, faRocket } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBolt,
+  faRocket,
+  faWandMagicSparkles,
+} from '@fortawesome/free-solid-svg-icons';
 
 import '../styles/Services.scss';
 
@@ -20,7 +24,7 @@ const Services = () => {
         'Build your next dream website with us. We design and develop websites and web apps that can make sure you’re seen and heard in the right circles.',
     },
     {
-      icon: faBolt,
+      icon: faWandMagicSparkles,
       title: 'UI/UX Design',
       description:
         'Build your next dream website with us. We design and develop websites and web apps that can make sure you’re seen and heard in the right circles.',
