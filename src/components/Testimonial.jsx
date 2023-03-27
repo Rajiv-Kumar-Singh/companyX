@@ -13,12 +13,14 @@ const Testimonial = () => {
       text: 'Awesome team to work with. Lorem ipsum Consectetur adipisicing elit. Adipisci sunt harum, nesciunt a velit non maiores qui esse assumenda accusamus!',
       name: 'Julian Doe',
       company: 'Microsoft',
+      animationDelay: '0',
     },
     {
       image: albert,
       text: 'Great working with them. Lorem ipsum Adipisci sunt harum, nesciunt a velit non maiores qui esse assumenda accusamus!',
       name: 'Albert Wan',
       company: 'Meta',
+      animationDelay: '100',
     },
   ];
   return (
@@ -28,11 +30,17 @@ const Testimonial = () => {
           <div className="row justify-content-center">
             <div className="col-md-12">
               <h2 className="testimonials__heading section__heading">
-                <span>Testimonials</span>
+                <span data-aos="fade-up">Testimonials</span>
               </h2>
             </div>
             {testimonials.map((testimonial) => (
-              <div className="testimonials__box col-md-5 m-2">
+              <div
+                className="testimonials__box col-md-5 m-2"
+                key={testimonial.text}
+                data-aos="flip-down"
+                data-aos-delay={testimonial.animationDelay}
+                data-aos-offset="200"
+              >
                 <p>{testimonial.text}</p>
                 <img src={testimonial.image} alt="dp" />
                 <h4>{testimonial.name}</h4>

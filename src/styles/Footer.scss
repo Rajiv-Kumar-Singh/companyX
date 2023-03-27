@@ -1,0 +1,44 @@
+.footer {
+  position: relative;
+  background: #000000; /* fallback for old browsers */
+  background: linear-gradient(311deg, #12295c, #000000);
+  color: #ffffff;
+  padding: 2em 0;
+
+  &__widget {
+    h4 {
+      margin-bottom: 1em;
+      &:after {
+        content: '';
+        background: #ffffff;
+        display: block;
+        width: 2em;
+        height: 0.06em;
+        margin: 0.3em 0;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin-bottom: 0.5em;
+
+        &:hover {
+          color: #00ffff;
+        }
+      }
+
+      a {
+        color: #ffffff;
+        &:hover {
+          transition: all linear 0.05s;
+          color: #00ffff;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
       <div className="hero pt-5">
-        <div className="container">
+        <div className="container" data-aos="fade-up">
           <div className="row">
             <div className="col-md-8 col-lg-6">
               <div className="hero__text-content">

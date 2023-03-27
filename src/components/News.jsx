@@ -20,6 +20,7 @@ const News = () => {
       date: 'Jan 28, 2020',
       details:
         ' Report shows dummy text here read more,Lorem, ipsum dolor sit amet consectet  adipisicing elit. ',
+      animationDelay: '0',
     },
     {
       image: office,
@@ -27,6 +28,7 @@ const News = () => {
       date: 'Jun 5, 2020',
       details:
         'Analysis of report published by media. Lorem, ipsum dolor sit amet consectet  adipisicing elit.',
+      animationDelay: '100',
     },
     {
       image: coderGuy,
@@ -34,6 +36,7 @@ const News = () => {
       date: 'May 10, 2021',
       details:
         ' Lorem, ipsum dolor sit amet consectet  adipisicing elit. Amet laboriosam, fugiat quibusdam laborum possimus neque?',
+      animationDelay: '200',
     },
     {
       image: office,
@@ -41,6 +44,7 @@ const News = () => {
       date: 'Nov 8, 2022',
       details:
         'Read report of year 2022. lorem adipisicing elit. Amet laboriosam, fugiat quibusdam laborum possimus neque?',
+      animationDelay: '300',
     },
   ];
   return (
@@ -55,7 +59,13 @@ const News = () => {
             </div>
 
             {news.map((newsItem) => (
-              <div className="col-md-3 news__card">
+              <div
+                className="col-lg-3 col-md-4 col-sm-6 news__card"
+                key={newsItem.title}
+                data-aos="fade-up"
+                data-aos-delay={newsItem.animationDelay}
+                data-aos-offset="200"
+              >
                 <img src={newsItem.image} alt="thumbnail" loading="lazy" />
                 <h3>
                   <a className="news__title" href="/">

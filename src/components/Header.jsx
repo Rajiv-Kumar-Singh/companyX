@@ -6,18 +6,20 @@ const Header = () => {
     <div className="header sticky-top">
       <div className="container">
         <div className="d-md-flex justify-content-md-between align-item-center">
-          <h1 className="header__logo">CompanyX</h1>
+          <h1 className="header__logo" data-aos="zoom-in" data-aos-delay="0">
+            CompanyX
+          </h1>
           <ul className="header__menu ">
-            <li>
+            <li data-aos="fade-down" data-aos-delay="0">
               <a href="/">Home</a>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay="100">
               <a href="/">About</a>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay="200">
               <a href="/">Projects</a>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay="300">
               <a href="/">Contact Us</a>
             </li>
           </ul>
