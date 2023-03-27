@@ -3,8 +3,13 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f4f3f4;
+  scroll-behavior: smooth;
 }
 
 a {
