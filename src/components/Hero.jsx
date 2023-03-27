@@ -4,7 +4,7 @@ import '../styles/Hero.scss';
 const Hero = () => {
   return (
     <>
-      <div className="hero py-5">
+      <div className="hero pt-5">
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-lg-6">

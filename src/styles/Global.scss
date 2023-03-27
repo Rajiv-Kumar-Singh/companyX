@@ -1,0 +1,40 @@
+// common padding to all the sections
+.section {
+  padding-top: 2em;
+  padding-bottom: 8em;
+
+  &__heading {
+    font-size: 2.3em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+    margin-bottom: 2em;
+
+    span {
+      //   background: -webkit-linear-gradient(#eee, #333);
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        79deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(26, 72, 202, 1) 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &:after {
+      background: linear-gradient(
+        79deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(26, 72, 202, 1) 100%
+      );
+      content: '';
+      display: block;
+      width: 3em;
+      height: 0.08em;
+      margin: 0.3em auto;
+    }
+  }
+}
+
+// common styling to all headings
