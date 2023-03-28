@@ -28,7 +28,12 @@ const Header = () => {
     <div className="header sticky-top">
       <div className="container">
         <div className="d-md-flex justify-content-md-between align-item-center">
-          <h1 className="header__logo" data-aos="zoom-in" data-aos-delay="0">
+          <h1
+            className="header__logo"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+            data-aos-once="true"
+          >
             Meta solutions
           </h1>
           {/* Haamburger Icon */}
@@ -40,16 +45,16 @@ const Header = () => {
 
           {/* Menu Items  */}
           <ul className="header__menu" id="header__nav-links">
-            <li data-aos="fade-down" data-aos-delay="0">
+            <li data-aos="fade-down" data-aos-delay="0" data-aos-once="true">
               <a href="/">Home</a>
             </li>
-            <li data-aos="fade-down" data-aos-delay="100">
+            <li data-aos="fade-down" data-aos-delay="100" data-aos-once="true">
               <a href="/">About</a>
             </li>
-            <li data-aos="fade-down" data-aos-delay="200">
+            <li data-aos="fade-down" data-aos-delay="200" data-aos-once="true">
               <a href="/">Projects</a>
             </li>
-            <li data-aos="fade-down" data-aos-delay="300">
+            <li data-aos="fade-down" data-aos-delay="300" data-aos-once="true">
               <a href="/">Contact Us</a>
             </li>
           </ul>
