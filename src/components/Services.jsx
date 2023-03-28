@@ -37,15 +37,18 @@ const Services = () => {
     <>
       <div className="services section" id="services">
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-md-12">
               <h2 className="services__heading section__heading">
-                Our <span data-aos="fade-down">Services</span>
+                Our{' '}
+                <span data-aos="fade-down" data-aos-delay="200">
+                  Services
+                </span>
               </h2>
             </div>
             {serviceCards.map((card) => (
               <div
-                className="col-md-4"
+                className="col-sm-6 col-md-4"
                 key={card.title}
                 data-aos="fade-up"
                 data-aos-delay={card.animationDelay}

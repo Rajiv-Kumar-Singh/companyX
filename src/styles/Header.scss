@@ -28,9 +28,88 @@
         padding: 0.9em 0.625em;
 
         &:hover {
+          transition: all ease-in-out 0.3s;
           background: rgba(44, 93, 159);
         }
       }
+    }
+  }
+
+  // Hamburger icon styling
+  &__hamburger-icon {
+    position: absolute;
+    top: 1em;
+    right: 5%;
+    width: 1.65em;
+    height: 1.2em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 101;
+
+    span {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 0.1em;
+      border-radius: 0.05em;
+      background: #ffffff;
+    }
+  }
+
+  &__icon-line-animate {
+    animation: rotateLine 0.5s linear forwards;
+  }
+
+  &__icon-bottom-line-animate {
+    animation: rotateBottomLine 0.5s linear forwards;
+  }
+
+  @keyframes rotateLine {
+    0% {
+      transform: rotate(0deg);
+      top: 50%;
+    }
+    100% {
+      transform: rotate(45deg);
+      top: 50%;
+    }
+  }
+
+  @keyframes rotateBottomLine {
+    0% {
+      transform: rotate(0deg);
+      bottom: 50%;
+    }
+    100% {
+      transform: rotate(-45deg);
+      bottom: 50%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      background: #000000; /* fallback for old browsers */
+      background: linear-gradient(311deg, #12295c, #000000);
+    }
+
+    &__hamburger-icon {
+      display: flex;
+    }
+
+    #header__nav-links {
+      display: none;
     }
   }
 }

@@ -9,11 +9,11 @@ const Hero = () => {
           <div className="row">
             <div className="col-md-8 col-lg-6">
               <div className="hero__text-content">
-                <h1 className="hero__title">Some Heading Goes Here</h1>
+                <h1 className="hero__title">Transform Your Digital World</h1>
                 <p className="lead">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Error accusamus amet reprehenderit architecto neque iste
-                  libero recusandae dicta labore placeat.
+                  Our team of experts is dedicated to staying ahead of the curve
+                  and bringing you the latest in modern technology to help your
+                  business thrive.
                 </p>
               </div>
             </div>

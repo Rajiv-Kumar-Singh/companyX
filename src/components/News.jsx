@@ -16,7 +16,7 @@ const News = () => {
   const news = [
     {
       image: meeting,
-      title: 'New report shows growth analytics of companyX',
+      title: 'New report shows growth analytics of meta solutions',
       date: 'Jan 28, 2020',
       details:
         ' Report shows dummy text here read more,Lorem, ipsum dolor sit amet consectet  adipisicing elit. ',
@@ -32,7 +32,7 @@ const News = () => {
     },
     {
       image: coderGuy,
-      title: 'Geeting more out of companyX app',
+      title: 'Geeting more out of meta solutions app',
       date: 'May 10, 2021',
       details:
         ' Lorem, ipsum dolor sit amet consectet  adipisicing elit. Amet laboriosam, fugiat quibusdam laborum possimus neque?',

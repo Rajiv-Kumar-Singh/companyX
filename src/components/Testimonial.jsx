@@ -41,10 +41,14 @@ const Testimonial = () => {
                 data-aos-delay={testimonial.animationDelay}
                 data-aos-offset="200"
               >
+                <div className="testimonials__client-info">
+                  <img src={testimonial.image} alt="client image" />
+                  <div>
+                    <h4>{testimonial.name}</h4>
+                    <p>{testimonial.company}</p>
+                  </div>
+                </div>
                 <p>{testimonial.text}</p>
-                <img src={testimonial.image} alt="dp" />
-                <h4>{testimonial.name}</h4>
-                <p>{testimonial.company}</p>
               </div>
             ))}
           </div>

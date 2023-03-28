@@ -11,21 +11,23 @@ const Footer = () => {
       <div className="footer">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+            {/* first column   */}
+            <div className="col-md-4 col-sm-6">
               <div className="footer__widget">
                 <h4>About Us</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Natus tenetur, nobis rerum quas.
+                  From concept to launch, we pride ourselves on delivering
+                  high-quality, reliable, and user-friendly solutions that
+                  exceed expectations.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quaerat et iusto facere a eligendi perferendis.
+                  Contact us today to learn more about how we can help take your
+                  business to the next level.
                 </p>
               </div>
             </div>
             {/* second column   */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-6">
               <div className="footer__widget">
                 <h4>Services</h4>
                 <ul>
@@ -45,11 +47,11 @@ const Footer = () => {
               </div>
             </div>
             {/* Third Column  */}
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-6">
               <div className="footer__widget">
                 <h4>Address</h4>
                 <address>
-                  <b>CompanyX</b>
+                  <b>Meta solutions</b>
                   <br />
                   249 Wrong Turn, Unknown <br />
                   Wakanda, 271580 <br />

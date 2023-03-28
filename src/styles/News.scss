@@ -3,8 +3,8 @@
   // background-color: #fff;
   &__card {
     img {
-      max-width: 100%;
-      height: 12em;
+      width: 100%;
+      height: auto;
       margin-bottom: 0.5em;
     }
   }
@@ -36,6 +36,16 @@
     font-size: 0.75em;
     span {
       margin-right: 0.2em;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0.5em;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__card {
+      margin-bottom: 1.5em;
     }
   }
 }
